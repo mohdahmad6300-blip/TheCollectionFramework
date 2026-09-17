@@ -1,29 +1,27 @@
 package com.collection.Objects;
 
-import java.util.ArrayList;
-import java.util.Collections;
 
-import com.collection.list.StudentsCom;
+
+import java.util.HashSet;
+
+import com.collection.Set.Students;
 
 public class StudentsObj 
 {
 
 	public static void main(String[] args) 
 	{
-		ArrayList<StudentsCom> students = new ArrayList<StudentsCom>();
+		HashSet<Students> Students = new HashSet<Students>();
 		
-		students.add(new StudentsCom("Ahmad", 95));
-		students.add(new StudentsCom("Aboozar", 90));
-		students.add(new StudentsCom("Atifa", 75));
-		students.add(new StudentsCom("Tabrez", 80));
-		students.add(new StudentsCom("Neha", 65));
+		Students.add(new Students(1,"Ahmad"));
+		Students.add(new Students(2,"Aboozar"));
+		Students.add(new Students(3,"Atifa"));
+		Students.add(new Students(4,"Tabrez"));
+		Students.add(new Students(5,"Neha"));
 		
-		System.out.println(" : Sort By Name : ");
-		System.out.println(students);
+
 		
-		Collections.sort(students);
-		
-		System.out.println(students);
+		System.out.println(Students);
 	}
 
 }
